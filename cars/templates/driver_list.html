@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baza kierowcow</title>
+</head>
+
+<body>
+{% for driver in object_list %}
+    <li>{{driver.imie}} {{driver.nazwisko}}</li>
+{% empty %}
+    <li>No drivers in database.</li>
+{% endfor %}>
+
+</body>
+</html>

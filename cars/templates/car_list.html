@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baza samochodow</title>
+</head>
+
+<body>
+{% for car in object_list %}
+    <li>{{car.marka}} {{car.model}}</li>
+{% empty %}
+    <li>No cars in database.</li>
+{% endfor %}>
+
+</body>
+</html>
