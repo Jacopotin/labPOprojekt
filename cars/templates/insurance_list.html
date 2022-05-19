@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Baza ubezpieczen</title>
 </head>
+
 <body>
+{% for insurance in object_list %}
+<li>{{insurance.ubezpieczenie}} </li>
+{% empty %}
+    <li>No insurance in database.</li>
+{% endfor %}>
 
 </body>
 </html>

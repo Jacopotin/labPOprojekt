@@ -17,3 +17,9 @@ class KierowcaView(generic.ListView):
     def get_queryset(self):
         return Kierowca.objects.all()
 
+
+class UbezpieczenieView(generic.ListView):
+    model = Ubezpieczenie
+    template_name = "insurance_list.html"
+    def get_queryset(self):
+        return Ubezpieczenie.objects.all()
